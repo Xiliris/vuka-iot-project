@@ -208,17 +208,21 @@ Rezultat:
 ## Instalacija
 
 Backend:
-cd server
+cd vuka-server
 npm install
 npm run dev
 
 Frontend:
-cd client
+cd vuka-web
 npm install
 npm run dev
 
 Python sensor:
-python3 sensor.py
+cd vuka-senzor
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 index.py
 
 ---
 
